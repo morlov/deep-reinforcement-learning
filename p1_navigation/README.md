@@ -65,7 +65,7 @@ You can aslo find saved network parameters for DQN agent in files:
 - qnetwork_target.pt (target network weights)
       
 As well as html version of notebok in:
-- report.html (description of an algoritm used is proveded in part 4)
+- report.html (description of an algoritm used is provided in part 4)
 
 ### Futher work
 Priority buffer algorithm is implemented in not optimal way as sampling with starightforward sampling. This can be improved by using sum-tree data structure to improve sampling time, that store experience samples in sorted by priority orde, which require O(log(N)) sampling complexity.
