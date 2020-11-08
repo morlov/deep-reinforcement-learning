@@ -30,7 +30,7 @@ source activate p1_navigation
 2. Clone the repository and install dependencies.
 ```bash
 git clone https://github.com/morlov/deep-reinforcement-learning.git
-cd deep-reinforcement-learning/python
+cd deep-reinforcement-learning/p1_navigation
 pip install requirements.txt
 ```
 
