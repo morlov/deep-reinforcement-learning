@@ -16,7 +16,30 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Getting Started
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+To install project environment
+
+
+
+1. Create (and activate) a new environment with Python 3.6.
+ 
+```bash
+conda create --name drlnd python=3.6
+source activate p1_navigation
+```
+    
+2. Clone the repository and install dependencies.
+```bash
+git clone https://github.com/morlov/deep-reinforcement-learning.git
+cd deep-reinforcement-learning/python
+pip install requirements.txt
+```
+
+3. Create an ipython kernel for the `p1_navigation` environment.  
+```bash
+python -m ipykernel install --user --name drlnd --display-name "p1_navigation"
+````
+
+4. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -26,7 +49,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+5. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
 
 ### Instructions and content
 
@@ -38,11 +61,11 @@ This notebook contains:
 - A bunch of hepler function to run environment and check performance
 
 You can aslo find saved network parameters for DQN agent in files:
-- p1_navigation/qnetwork_local.pt (local network weights)
-- p1_navigation/qnetwork_target.pt (target network weights)
+- qnetwork_local.pt (local network weights)
+- qnetwork_target.pt (target network weights)
       
 As well as html version of notebok in:
-- p1_navigation/report.html
+- report.html (description of an algoritm used is proveded in part 4)
 
 ### Futher work
 Priority buffer algorithm is implemented in not optimal way as sampling with starightforward sampling. This can be improved by using sum-tree data structure to improve sampling time, that store experience samples in sorted by priority orde, which require O(log(N)) sampling complexity.
