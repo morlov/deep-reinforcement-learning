@@ -74,7 +74,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 Run the notebook Continuous_Control.ipyng throughout to train and test agents. 
 
 This notebook contains:
-- PPOAgent - a class implementing Deep Q-network algorithm
+- PPOAgent - a class implementing PPO algorithm
 - A bunch of hepler function to run environment and check performance
 
 You can aslo find saved policy network for PPO agent in:
