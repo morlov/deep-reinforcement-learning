@@ -74,5 +74,5 @@ You can aslo find saved networks for MADDPG agent (target networks should be ini
 - agent2_critic.pt
 - agent2_actor.pt
       
-Report is placed as html version of notebok in Report.ipynb
+Report is placed in Report.ipynb.
 
