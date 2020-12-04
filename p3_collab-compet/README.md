@@ -64,7 +64,6 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 Run the notebook `Tennis.ipynb` to train and test agents. 
 
-
 This notebook contains:
 - MADDPGAgnet - a class implementing MADDPG an algorithm for learning multiple agents to compete or collaborate.
 - A bunch of hepler function to run environment and check performance
@@ -75,6 +74,5 @@ You can aslo find saved networks for MADDPG agent (target networks should be ini
 - agent2_critic.pt
 - agent2_actor.pt
       
-Report is placed as html version of notebok in:
-- report.html (description of an algoritm used and further work is provided in the repprt)
+Report is placed as html version of notebok in Report.ipynb
 
